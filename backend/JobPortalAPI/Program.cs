@@ -59,7 +59,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReact", policy =>
     {
-        policy.WithOrigins("http://localhost:3000", "http://localhost:5173")
+        policy.WithOrigins("https://jobportal-three-lake.vercel.app", "http://localhost:5173")
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
